@@ -1,0 +1,57 @@
+---
+title: "Title of Dissertation in Title Case"
+author: "Author Name"
+institute: "Northwestern University"
+date: "June 2008"
+field: "Communication Studies"
+bibliography: bibliography.bib
+abstract: |
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+vita: |
+  This is an example of a vita section.
+execute: 
+  cache: true
+format:
+  northwestern-thesis-typst:
+    keep-typ: true
+---
+
+# The Very First Chapter
+
+Here is a quotation in a paragraph:
+
+> Why do the nations rage, and the peoples plot a vain thing? The kings of the earth take a stand, and the rulers take counsel together, against Yahweh, and against his Anointed, saying, «Let's break their bonds apart, and cast their cords from us.» He who sits in the heavens will laugh. The LORD will have them in derision. Then he will speak to them in his anger, and terrify them in his wrath: «Yet I have set my King on my holy hill of Zion.» I will tell of the decree. Yahweh said to me, «You are my son. Today I have become your father. Ask of me, and I will give the nations for your inheritance, the uttermost parts of the earth for your possession. You shall break them with a rod of iron. You shall dash them in pieces like a potter's vessel.» Now therefore be wise, you kings. Be instructed, you judges of the earth. Serve Yahweh with fear, and rejoice with trembling. Give sincere homage to the Son, lest he be angry, and you perish in the way, for his wrath will soon be kindled. Blessed are all those who take refuge in him [@ASVBible].
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris fringilla diam nibh, suscipit ultricies orci interdum vitae. Sed tincidunt ullamcorper dui, nec porta nisl feugiat at. Nunc ultrices, purus et condimentum aliquet, purus odio imperdiet ligula, quis consectetur justo quam in nunc. Donec id turpis nec arcu blandit mattis. Nulla mattis at velit at molestie. Nunc sed risus metus. In quis ultricies felis, in fermentum lorem. Quisque lacus metus, bibendum sit amet egestas sed, dapibus ac ex. Aliquam nec iaculis nunc, eu molestie felis. Aenean at accumsan est. Quisque ac lorem in ante egestas laoreet eget id lectus.
+
+Donec placerat, erat sodales faucibus rhoncus, sem purus porttitor risus, sit amet ullamcorper dolor sapien eget massa. Sed blandit, ligula at lacinia mollis, est nisl efficitur leo, non molestie elit magna et dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In in feugiat augue. Morbi at magna nec elit semper pellentesque. Fusce aliquam pharetra neque a dignissim. Nulla finibus sit amet enim ac dictum. Vivamus placerat, arcu in porttitor convallis, purus libero venenatis ex, id aliquam purus sem a justo. Sed nec ornare augue, at dapibus est. Morbi at diam ultrices, rhoncus quam in, luctus purus. Sed a ultricies augue. Etiam tincidunt id dolor sed consequat. Fusce at cursus dolor. Donec interdum nisl eget lorem vehicula, at placerat nisi elementum. Vivamus id condimentum augue, aliquam mollis orci. Nunc lobortis ut dui eget accumsan.
+
+# A Second Chapter
+
+Praesent ut augue in dolor sollicitudin suscipit non non nulla. Donec molestie nunc non sapien efficitur placerat. Cras turpis sem, mollis quis dolor condimentum, ultrices faucibus massa. Sed convallis feugiat varius. Nunc libero lectus, mollis in lacus quis, tempus dignissim est. Donec vel lorem nec sapien suscipit luctus. Vestibulum vitae elit at massa gravida iaculis. In hac habitasse platea dictumst.
+
+![A screenshot.](images/screenshot1.png){#fig-screenshot1}
+
+Donec augue nulla, aliquam vehicula facilisis sed, placerat vel odio. Integer fermentum vestibulum pharetra. Praesent ornare elit eu lacinia malesuada. Proin mollis pellentesque lectus, at iaculis arcu porta ut. Fusce augue quam, accumsan ut tempor eu, lacinia ac lectus. Fusce vehicula dictum ligula, et scelerisque massa volutpat a. Curabitur malesuada mauris ac leo fermentum, non fermentum velit sodales. Phasellus rhoncus a erat sed vestibulum. Vivamus maximus dui sed lacinia euismod. In commodo tristique dolor vitae egestas. Nullam et viverra purus, mattis suscipit mi. Sed aliquam scelerisque nisl id consequat. Integer ligula erat, fringilla sed convallis id, viverra at augue. Duis mollis ornare cursus.
+
+
+## A Subsection
+
+Maecenas et velit eget nunc maximus porta. Vestibulum mollis, quam eget ullamcorper mollis, dolor lorem mattis odio, vitae malesuada lacus massa eu tellus. Integer ac accumsan orci, eget sodales risus. Sed facilisis posuere massa, dictum maximus leo euismod eu. Vestibulum placerat arcu in mauris rhoncus efficitur. Maecenas vel nulla sit amet erat dictum bibendum. Vestibulum posuere massa ut bibendum ornare. In et nulla vel tellus efficitur maximus[^1]. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Cras mi magna, consequat et justo at, venenatis faucibus magna. Maecenas pulvinar, odio lacinia semper ultrices, lectus lectus facilisis justo, at bibendum diam justo sit amet metus. Praesent quis viverra magna. Etiam imperdiet imperdiet tortor, ut pulvinar massa auctor ac. Pellentesque fermentum ex eu mi venenatis, sed maximus leo cursus. Donec tincidunt, purus eu lacinia mattis, mi enim sagittis nibh, a lacinia ex erat a ipsum. Mauris nec nulla at ipsum consectetur mattis sed eget dolor
+
+
+[^1]: This is a footer and it goes down here.
+
+
+| Something | 1 | 1 | 1 | 0 |
+|-----------|---|---|---|---|
+| Else      | 0 | 0 | 0 | 1 |
+| What      |   | 3 |   |   |
+| is this   |   |   |   | 7 |
+
+: This is a table with a caption. When the caption is very long, however, it will start to create problems for us. {#tbl-my-table}
+
+# References {.unnumbered}
+
+::: {#refs}
+:::

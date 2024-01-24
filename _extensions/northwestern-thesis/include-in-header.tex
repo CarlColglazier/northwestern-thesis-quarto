@@ -1,0 +1,40 @@
+
+\let\paragraph\oldparagraph
+\let\subparagraph\oldsubparagraph
+\usepackage[explicit]{titlesec}
+\renewcommand\maketitle{}
+% revert
+\let\oldparagraph\paragraph
+
+
+\usepackage[titles]{tocloft}
+
+\usepackage[normalem]{ulem}  %for italicized text
+
+% Header stuff
+\usepackage{scrlayer-scrpage}
+%\clearpairofpagestyles
+\rohead*{\pagemark}
+
+
+% Format for Table of Contents
+\renewcommand{\cftchapdotsep}{\cftdotsep}  %add dot separators
+\renewcommand{\cftchapfont}{\bfseries}  %set title font weight
+\renewcommand{\cftchappagefont}{}  %set page number font weight
+\renewcommand{\cftchappresnum}{Chapter }
+\renewcommand{\cftchapaftersnum}{:}
+\renewcommand{\cftchapnumwidth}{5em}
+\renewcommand{\cftchapafterpnum}{\vskip\baselineskip} %set correct spacing for entries in single space environment
+\renewcommand{\cftsecafterpnum}{\vskip\baselineskip}  %set correct spacing for entries in single space environment
+\renewcommand{\cftsubsecafterpnum}{\vskip\baselineskip} %set correct spacing for entries in single space environment
+\renewcommand{\cftsubsubsecafterpnum}{\vskip\baselineskip} %set correct spacing for entries in single space environment
+\setcounter{tocdepth}{3}
+\setcounter{secnumdepth}{3}
+
+%format title font size and position (this also applys to list of figures and list of tables)
+\titleformat{\chapter}[display]
+{\normalfont\bfseries\filcenter}{\chaptertitlename\ \thechapter}{0pt}{\MakeUppercase{#1}}
+
+% Single space quotes
+%\usepackage{etoolbox}
+\AtBeginEnvironment{quote}{\par\singlespacing\small}

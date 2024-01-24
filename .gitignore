@@ -1,0 +1,7 @@
+.DS_Store
+
+/.luarc.json
+*.fff
+template.pdf
+template.tex
+template.typ

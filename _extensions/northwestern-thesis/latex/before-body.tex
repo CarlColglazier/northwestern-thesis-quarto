@@ -1,0 +1,66 @@
+\doublespacing
+
+\newcommand{\formattitlespace}{0.6in}
+
+\begin{titlepage}\begin{center}\begin{singlespacing}
+\vspace{5\baselineskip}   
+$if(institute)$
+\MakeUppercase{$institute$}\\
+$endif$
+\vspace{\formattitlespace}
+
+$if(title)$
+$title$\\
+$endif$
+\vspace{\formattitlespace}
+
+A DISSERTATION\\
+\vspace{\formattitlespace}
+SUBMITTED TO THE GRADUATE SCHOOL\\
+IN PARTIAL FULFILLMENT OF THE REQUIREMENTS\\
+\vspace{\formattitlespace}
+for the degree\\
+\vspace{\formattitlespace}
+DOCTOR OF PHILOSOPHY\\
+\vspace{\formattitlespace}
+$if(field)$Field of $field$\\$endif$
+\vspace{\formattitlespace}
+By\\
+\vspace{1\baselineskip}
+$if(author)$$author$\\$endif$
+\vspace{\formattitlespace}
+EVANSTON, ILLINOIS\\
+\vspace{\formattitlespace}
+$if(date)$$date$\\$endif$
+\vspace{\formattitlespace}
+\vfill
+
+\end{singlespacing}\end{center}\end{titlepage}
+
+\pagenumbering{arabic}
+\setcounter{page}{2}
+$if(abstract)$
+\clearpage
+\begin{centering}
+\textbf{ABSTRACT}\\
+\vspace{\baselineskip}
+\end{centering}
+\begin{doublespacing}
+$abstract$
+\end{doublespacing}
+$endif$
+
+
+\titleformat{\chapter}[display]
+{\normalfont\bfseries\filcenter}{\MakeUppercase\chaptertitlename\ \thechapter}{0pt}{\MakeUppercase{#1}}  %spacing between titles
+\titlespacing*{\chapter}
+  {0pt}{0pt}{30pt}	%controls vertical margins on title
+  
+% Adjust section title formatting
+\titleformat{\section}{\normalfont\bfseries}{\thesection}{1em}{#1}
+
+% Adjust subsection title formatting
+\titleformat{\subsection}{\normalfont\bfseries}{\thesubsection}{0em}{\hspace{1em}#1}
+
+% Adjust subsubsection title formatting
+\titleformat{\subsubsection}{\normalfont\itshape}{\thesubsection}{1em}{#1}
