@@ -6,6 +6,7 @@
 #let nuthesis(
   title: "Paper Title",
   author: "Author Name",
+  date: "Month Year",
   abstract: none,
   paper-size: "us-letter",
   bibliography-file: none,
@@ -56,7 +57,7 @@
   v(48pt, weak: true)
   align(center, "Evanston, Illinois")
   v(48pt, weak: true)
-  align(center, "Month Year")
+  align(center, text(date))
   v(8.35mm, weak: true)
 
   // newpage
@@ -105,24 +106,32 @@
     block(above: 0em, below: 2em)[
     #outline(
       title: toc_title,
-      depth: toc_depth
+      depth: toc_depth,
+      indent: 2em
     );
     ]
     pagebreak()
   }
 
-  outline(title: "Figures", target: figure.where(kind: image))
 
-
-  if lof {
+  //if lof {
     //"List of Figures"
-    outline(
-      title: [List of Figures],
-      target: figure.where(kind: image),
-      depth: none,
+  block(above: 0em, below: 2em)[
+    /*#show outline.entry.where(
+      level: 1
+    ): it => {
+      [
+        #block(it.body)
+      ]
+    }*/
+    #outline(
+      title: "List of Figures",
+      target: figure, //.where(kind: image),
+      //depth: none,
     )
+  ]
     pagebreak()
-  }
+  //}
 
   if lot {
     outline(

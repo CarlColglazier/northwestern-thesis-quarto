@@ -12,6 +12,7 @@ vita: |
 execute: 
   cache: true
 format:
+  northwestern-thesis-pdf: default
   northwestern-thesis-typst:
     keep-typ: true
 ---

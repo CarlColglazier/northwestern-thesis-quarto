@@ -1,6 +1,6 @@
 title: Northwestern Thesis Format Template
 author: Carl Colglazier
-version: 0.0.1
+version: 0.0.2
 contributes:
   formats:
     common:
@@ -8,16 +8,17 @@ contributes:
         opts_chunk:
           echo: false
     pdf:
-      documentclass: scrreport
+      documentclass: scrreprt
+      classoption: [headinclude=true,footinclude=true,mpinclude=false]
       papersize: letter
-      #classoption: [div=12]
+      pdfengine: xelatex
       fontsize: 12pt
       date-format: MMMM YYYY
       toc: true
       toc_title: "Table of Contents"
       lot: true
       lof: true
-      indent: true
+      #indent: true
       geometry:
       - letterpaper
       - headsep=0pt
@@ -27,11 +28,11 @@ contributes:
       - top=1in
       - bottom=1in
       #- showframe # helps debug margins
-      - includefoot
-      - includehead
+      #- includefoot
+      #- includehead
       - heightrounded
       hyperrefoptions:
-      - bookmarks=true
+      - bookmarks=false
       - hidelinks
       mainfont: "Times New Roman"
       linestretch: 2.0
