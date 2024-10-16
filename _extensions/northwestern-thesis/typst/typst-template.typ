@@ -13,13 +13,15 @@
   toc_title: "Table of Contents",
   toc_depth: none,
   document-type: "dissertation",
+  field: "Computer Science",
+  mainfont: "Times New Roman",
   body
 ) = {
   // Set document metadata.
   set document(title: title, author: author)
 
   // Set the body font.
-  set text(font: "Times New Roman", size: 12pt)
+  set text(font: mainfont, size: 12pt)
 
   // Configure the page.
   set page(
@@ -47,7 +49,7 @@
   v(48pt, weak: true)
   align(center, "DOCTOR OF PHILOSOPHY")
   v(48pt, weak: true)
-  align(center, "Field of Computer Science")
+  align(center, "Field of " + field)
   v(48pt, weak: true)
   align(center, "By")
   v(48pt, weak: true)
@@ -107,7 +109,7 @@
   // https://github.com/typst/typst/issues/106
   set text(top-edge: 0.7em, bottom-edge: -0.3em)
   set par(
-    first-line-indent: 0.25in,
+    first-line-indent: 0.5in,
     leading: 1em,
     justify: false,
   )

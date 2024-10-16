@@ -1,6 +1,6 @@
 title: Northwestern Thesis Format Template
 author: Carl Colglazier
-version: 0.0.3
+version: 0.0.4
 contributes:
   formats:
     common:
