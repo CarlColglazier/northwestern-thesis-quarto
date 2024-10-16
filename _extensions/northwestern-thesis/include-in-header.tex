@@ -1,4 +1,3 @@
-
 \let\paragraph\oldparagraph
 \let\subparagraph\oldsubparagraph
 \usepackage[explicit]{titlesec}
@@ -13,17 +12,16 @@
 
 % Header stuff
 \usepackage{scrlayer-scrpage}
-%\clearpairofpagestyles
+\clearpairofpagestyles
 \rohead*{\pagemark}
-
 
 % Format for Table of Contents
 \renewcommand{\cftchapdotsep}{\cftdotsep}  %add dot separators
-\renewcommand{\cftchapfont}{\bfseries}  %set title font weight
+\renewcommand{\cftchapfont}{}%{\bfseries}  %set title font weight
 \renewcommand{\cftchappagefont}{}  %set page number font weight
-\renewcommand{\cftchappresnum}{Chapter }
+\renewcommand{\cftchappresnum}{ }
 \renewcommand{\cftchapaftersnum}{:}
-\renewcommand{\cftchapnumwidth}{5em}
+\renewcommand{\cftchapnumwidth}{2em}
 \renewcommand{\cftchapafterpnum}{\vskip\baselineskip} %set correct spacing for entries in single space environment
 \renewcommand{\cftsecafterpnum}{\vskip\baselineskip}  %set correct spacing for entries in single space environment
 \renewcommand{\cftsubsecafterpnum}{\vskip\baselineskip} %set correct spacing for entries in single space environment

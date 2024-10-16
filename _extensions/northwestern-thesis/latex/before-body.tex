@@ -14,8 +14,10 @@ $title$\\
 $endif$
 \vspace{\formattitlespace}
 
-A DISSERTATION\\
+$if(document-type)$
+A \MakeUppercase{$document-type$}\\
 \vspace{\formattitlespace}
+$endif$
 SUBMITTED TO THE GRADUATE SCHOOL\\
 IN PARTIAL FULFILLMENT OF THE REQUIREMENTS\\
 \vspace{\formattitlespace}
@@ -37,8 +39,6 @@ $if(date)$$date$\\$endif$
 
 \end{singlespacing}\end{center}\end{titlepage}
 
-\pagenumbering{arabic}
-\setcounter{page}{2}
 $if(abstract)$
 \clearpage
 \begin{centering}
@@ -52,15 +52,11 @@ $endif$
 
 
 \titleformat{\chapter}[display]
-{\normalfont\bfseries\filcenter}{\MakeUppercase\chaptertitlename\ \thechapter}{0pt}{\MakeUppercase{#1}}  %spacing between titles
+{\normalfont\bfseries\filcenter}{}{0pt}{\MakeUppercase{#1}}  %spacing between titles
+
 \titlespacing*{\chapter}
-  {0pt}{0pt}{30pt}	%controls vertical margins on title
+  {0pt}{0pt}{0pt}	%controls vertical margins on title
   
-% Adjust section title formatting
-\titleformat{\section}{\normalfont\bfseries}{\thesection}{1em}{#1}
-
-% Adjust subsection title formatting
-\titleformat{\subsection}{\normalfont\bfseries}{\thesubsection}{0em}{\hspace{1em}#1}
-
-% Adjust subsubsection title formatting
-\titleformat{\subsubsection}{\normalfont\itshape}{\thesubsection}{1em}{#1}
+\titleformat{\section}{\normalfont\filcenter}{}{0em}{#1}
+\titleformat{\subsection}{\normalfont\itshape}{}{0em}{#1}
+\titleformat{\subsubsection}{\normalfont}{}{1em}{#1}

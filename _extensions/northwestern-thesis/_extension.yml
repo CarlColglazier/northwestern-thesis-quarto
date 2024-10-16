@@ -1,6 +1,6 @@
 title: Northwestern Thesis Format Template
 author: Carl Colglazier
-version: 0.0.2
+version: 0.0.3
 contributes:
   formats:
     common:
@@ -18,7 +18,15 @@ contributes:
       toc_title: "Table of Contents"
       lot: true
       lof: true
-      #indent: true
+      number-sections: false
+      number-depth: 0
+      indent: true
+      link-citations: true
+      citecolor: black
+      linkcolor: black
+      filecolor: black
+      urlcolor: black
+      toccolor: black
       geometry:
       - letterpaper
       - headsep=0pt
@@ -28,21 +36,20 @@ contributes:
       - top=1in
       - bottom=1in
       #- showframe # helps debug margins
-      #- includefoot
-      #- includehead
       - heightrounded
-      hyperrefoptions:
-      - bookmarks=false
-      - hidelinks
+      #hyperrefoptions:
+      #- bookmarks=false
+      #- hidelinks
       mainfont: "Times New Roman"
       linestretch: 2.0
       include-in-header:
         - include-in-header.tex
       template-partials:
-        - "latex/title.tex"
+        #- "latex/title.tex"
         - "latex/before-body.tex"
         - "latex/toc.tex"
         - "latex/after-body.tex"
+        - "latex/citations.tex"
     typst:
       papersize: us-letter
       margin:
@@ -54,7 +61,8 @@ contributes:
       mainfont: "Times New Roman"
       fontsize: 12pt
       date-format: MMMM YYYY
-      bibliographystyle: chicago-author-date
+      template: "typst/template.typ"
       template-partials:
         - "typst/typst-template.typ"
         - "typst/typst-show.typ"
+        - "typst/biblio.typ"
